@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat Nikola Djurovic nrt-5/22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/lightbox.css">
+
+    <meta name="description" content="Pronadjite recepte za ukusne vecere. Inspiracija za brze i jednostavne vecere koje će vasa porodica obozavati.">
+
+    <!-- Meta keywords (opciono) -->
+    <meta name="keywords" content="vecera, recepti za veceru, brzi recepti">
+
+</head>
+</head>
+<body>
+    <style>
+        @media (max-width: 576px) {
+    .navbar-brand {
+        flex-direction: row;
+        text-align: center;
+    }
+    .navbar-brand img {
+        margin-bottom: 5px;
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .navbar-brand span {
+        font-size: 1.2em;
+    }
+}            
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        a:hover{
+            color:rgb(0, 0, 255);
+        font-weight: bold;
+        font-size: 1.2em;
+        }
+        img{
+            object-fit: contain;
+        }
+        .card:hover {
+            transform: scale(1.15);
+           
+        }
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+        }
+
+        .navbar-nav .nav-item.dropdown .dropdown-menu {
+         display: none;
+          }
+    </style>
+
+    
+<div class="container">
+  <a class="navbar-brand" href="#" style="display: flex; align-items: center; justify-content: center;">
+      <img src="./slike/logo-black.svg" alt="Logo" style="max-width: 80px; max-height: 80px; margin-right: 10px;">
+      <span style="font-weight: bold; font-size: 1.5em;">KULINARSTVO I RECEPTI</span>
+  </a>
+</div>
+    
+    
+   
+
+      <nav class="navbar navbar-expand-lg bg-body-white rounded" style=" width: 70%; margin: 0 auto; text-align: center; background-color: rgba(240, 29, 29, 0.2); ">
+        <div class="container-fluid">
+
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" style="display: flex; margin: 0 auto;">
+              <li class="nav-item">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" style="display: inline;" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></a>
+                <a class="nav-link " aria-current="page" href="index.html">Pocetna</a>
+              </li>
+              <li class="nav-item">
+                <a href="onama.html"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"/></svg></a>
+                <a class="nav-link" href="onama.html">O nama</a>
+              </li>
+              
+              <li class="nav-item dropdown" >
+                <a href="recepti.html"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M216 64c-13.3 0-24 10.7-24 24s10.7 24 24 24h16v33.3C119.6 157.2 32 252.4 32 368H480c0-115.6-87.6-210.8-200-222.7V112h16c13.3 0 24-10.7 24-24s-10.7-24-24-24H256 216zM24 400c-13.3 0-24 10.7-24 24s10.7 24 24 24H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H24z"/></svg></a>
+                <a class="nav-link active dropdown-toggle" href="recepti.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recepti
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="predjelo.html">Predjelo</a></li>
+                  <li><a class="dropdown-item" href="glavnojelo.html">Glavno jelo</a></li>
+                  <li><a class="dropdown-item" href="vecera.html">Vecera</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+              <a href="galerija.html"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg></a>
+              <a class="nav-link" href="galerija.html">Galerija slika</a>
+            </li>
+  
+            <li class="nav-item dropdown" data-bs-hover="dropdown">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg></a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lista
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="staranazastampu.html">Strana za stampu</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ pitanja</a></li>
+                <li><a class="dropdown-item" href="download.html">Download selekcija</a></li>
+                <li><a class="dropdown-item" href="mapa.html">Mapa sajta</a></li>
+              </ul>
+            </li>
+  
+           
+            
+            <li class="nav-item">
+                 <a href="kontakt.html"> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z"/></svg></a>
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <br>
+
+
+
+      <h1 class="mb-4" style="font-weight: bold; text-align: center; ">RECEPTI</h1>
+      <h3 class="mb-4" style=" text-align: center;">TOP 9 NAJBOLJIH VECERA</h3>
+      <div class="container" style="max-width: 70%; height: auto;">
+        <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera1.jpg" data-lightbox="models" ><img src="slike/vecera1.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black;border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera1"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Grcka ledena kocka</h5>
+                  <p class="card-text">U serpi, prokuvajte mleko i secer dok ne dobijete gust sirup.
+                    Dodajte kokos, orahe, smokve, kajsije i puter.
+                    Mesajte dok se svi sastojci dobro ne sjedine.
+                    Sipajte smesu u pleh, poravnajte i ostavite da se ohladi.
+                    Kada se ohladi, stavite u zamrzivac.
+                    Kada je smesa sasvim ohlađena i stegnuta, isecite je na kocke i posluzite.</p>
+                  <p class="card-text">Sastojci:<br>
+                    2 solje mleka, 1 solja secera<br>
+                    2 solje rendane kokosove ljuske, 1 solja seckanih oraha<br>
+                    1 solja seckanih suvih smokvi<br>
+                    1 solja seckanih suvih kajsija, 200g putera
+                    </p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+<br>
+
+          <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera2.jpg" data-lightbox="models" ><img src="slike/vecera2.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black;border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera2"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Cupavce</h5>
+                  <p class="card-text">Umutite secer, puter i brasno.
+                    Dodajte orahe, rendanu cokoladu, prasak za pecivo i mleko.
+                    Promesajte dok ne dobijete homogenu smesu.
+                    Smesu stavite u pleh, ravnomerno je rasporedite i pecite.
+                    Kada se kolac ispece, jos topao isecite na kocke i pospite kokosovim brasnom.</p>
+                  <p class="card-text">Sastojci:<br>
+                    500g brasna, 200g secera, 200g seckanih oraha<br>
+                    200g rendane cokolade, 200g putera, 1 solja mleka<br>
+                    1 kesica praska za pecivo<br>
+                    Kokosovo brasno za posipanje</p>
+                
+            
+            
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera3.jpg" data-lightbox="models" ><img src="slike/vecera3.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black;border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera3"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Palacinke</h5>
+                  <p class="card-text">Umutite jaja, dodajte brasno, mleko, ulje, so i prasak za pecivo.
+                    Sve dobro promesajte dok ne dobijete glatku smesu.
+                    Pecite palacinke na zagrejanom tiganju s obe strane dok ne postanu zlatno smedje.</p>
+                  <p class="card-text">Sastojci:<br>
+                    2 solje brasna<br>
+            2 jaja, 2 solje mleka,<br>
+              1/2 solje ulja<br>
+            Prstohvat soli, prasak za pecivo
+</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera4.jpg" data-lightbox="models" ><img src="slike/vecera4.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black;border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera4"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Baklave</h5>
+                  <p class="card-text">Rastopite puter.
+                    Naizmenicno redjajte koru, orahe i puter u pleh.
+                    Pecite dok ne dobije zlatno smedju boju.
+                    U medjuvremenu, pripremite sirup od secera, vode i limuna.
+                    Prelijte vrucu baklavu hladnim sirupom.</p>
+                  <p class="card-text">Sastojci:<br>
+                    500g kora za baklavu<br>
+                     500g seckanih oraha<br>
+                    250g putera, 2 solje secera, 2 solje vode<br>
+                    Sok od pola limuna
+
+</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera5.jpg" data-lightbox="models" ><img src="slike/vecera5.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black; border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera5"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Makovnjaca</h5>
+                  <p class="card-text">Ugrejte mleko, dodajte kvasac i secer, ostavite da nadodje.
+                    Umutite brasno, dodajte nadosli kvasac, umucena jaja, otopljeni puter i mleveni mak.
+                    Mesajte dok ne dobijete glatko testo.
+                    Ostavite da odmara, a zatim razvijte testo, premazite nadevom i urolajte.
+                    Pecite dok ne dobije zlatno smedju boju.</p>
+                  <p class="card-text">Sastojci:<br>
+                    500g brasna, 1 kvasac<br>
+                    2 solje mleka, 1 solja secera<br>
+                    200g mlevenog maka, 200g putera, 2 jaja
+
+</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera6.jpg" data-lightbox="models" ><img src="slike/vecera6.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black; border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera6"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Torta sa cokoladom</h5>
+                  <p class="card-text">Otopite cokoladu i puter.
+                    Umutite secer i jaja, dodajte otopljenu cokoladu i puter.
+                    Dodajte brasno i dobro promesajte.
+                    Sipajte smesu u pleh i pecite dok se sredina ne stegne.</p>
+                  <p class="card-text">Sastojci:<br>
+                    200g cokolade<br>
+                200g putera<br>
+                200g secera<br>
+                6 jaja, 150g brasna
+</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera7.jpg" data-lightbox="models" ><img src="slike/vecera7.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black; border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera7"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Koh</h5>
+                  <p class="card-text">Umutite jaja sa secerom.
+                    Dodajte sir, brasno i vanilu, sve dobro izmesajte.
+                    Sipajte smesu u pleh i pecite dok ne dobije zlatno smeđu boju.
+
+                  </p>
+                  <p class="card-text">Sastojci:<br>
+                    1 kg sira, 6 jaja<br>
+                    1 solja secera, 1 solja brasna<br>
+                    1 vanilin secer
+                    
+                    </p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <style>
+            .card {
+                display: flex;
+                align-items: center;
+            }
+        
+            .gallery img {
+                object-fit: cover;
+                height: 100%; /* Slika će zauzimati celu visinu roditeljskog kontejnera */
+                width: 100%;
+                border-right: 1px solid black;
+            }
+        </style>
+        
+
+          <div class="card mb-3 rounded" style="max-width: 1000px;height: 300px; border: 2px solid black;">
+            <div class="row g-0 rounded">
+              <div class="col-md-4 rounded">
+                <div class="gallery rounded"><a href="slike/vecera8.jpg" data-lightbox="models" ><img src="slike/vecera8.jpg" class="img-fluid rounded" style="width: 100%; height: 297px; border-right: 1px solid black; border-bottom:1px solid black ;  display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera8"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Oblanda</h5>
+                  <p class="card-text">U serpi prokuvajte secer, margarin i mleko dok se sastojci potpuno ne sjedine.
+                    Podelite smesu na dva dela.
+                    U jedan deo dodajte brasno i vanilin secer, dobro promesajte.
+                    U drugi deo dodajte kakao prah i ponovo dobro promesajte.
+                    
+                    Poslednju oblandu stavite bez fila.
+                    Ostavite da se ohladi i stegne, pa isecite na zeljene oblike.</p>
+                  <p class="card-text">Sastojci:<br>
+                    500g secera, 250g margarina<br>
+                    200g brasna, 200ml mleka<br>
+                    100g kakao praha, 1 kesica vanilin secera
+                
+                
+</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="card mb-3" style="max-width: 1000px; height: 300px; border: 2px solid black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="gallery"><a href="slike/vecera9.jpg" data-lightbox="models" ><img src="slike/vecera9.jpg" class="img-fluid rounded" style=" height: 298px; border-right: 1px solid black; border-bottom:2px solid black ; display: block; margin-left: auto; margin-right: auto;  width: 400px;"  class="card-img-top" alt="vecera9"></a></div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Ciz kejk</h5>
+                  <p class="card-text">Otopite cokoladu, dodajte secer i puter, mesajte dok se secer ne rastopi.
+                    Sklonite sa vatre, dodajte umucena jaja i keks.
+                    Sve dobro promesajte i stavite u pleh.
+                    Ostavite da se stegne, pa isecite na kocke.</p>
+                  <p class="card-text">Sastojci:<br>
+                    500g mlevenog keksa<br>
+                    200g cokolade, 2 jaja<br>
+                    200g secera, 200g putera
+                    
+                    </p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+     
+      <br>
+      <footer>    
+        <style>
+        footer {
+           background-color:rgba(240, 29, 29, 0.2);
+           color: black;
+           padding: 10px 0;
+           text-align: center;
+           
+        }
+        footer h1 {
+           margin-bottom: 0px;
+        }
+        footer ul {
+           list-style-type: none;
+           padding: 0;
+           text-decoration: none;
+        }
+        footer ul li {
+           
+           margin-right: 5px;
+           text-decoration: none;
+        }
+        
+        footer nav ul li a {
+           color: #6e60ba;
+          
+        }
+        .pet{
+            text-decoration: none;
+        }
+        footer nav ul li a:hover {
+           text-decoration: underline;
+        }
+        .footerr
+        {
+            border-right: solid 1px rgba(10, 10, 10, 0.7);
+            text-decoration: none;
+        }
+        footer p {
+           margin-top: 00px;
+           
+        }
+        .hr{
+            border: solid 2px rgb(0, 0, 0);;
+            text-decoration: none;
+        }
+        ul{
+          color:#fff;
+        }
+                </style>
+                <h1>KULINARSTVO I RECEPTI</h1>
+                <div class="container py-4 py-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 text-center footerr pet">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Pocetna</a></li>
+                                <li><a href="onama.html">O nama</a></li>
+                                <li><a href="recepti.html">Recepti</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 text-center footerr pet" >
+                            <ul class="list-unstyled">
+                                <li><a href="predjelo.html">Predjelo</a></li>
+                                <li><a href="glavnojelo.html">Glavno jelo</a></li>
+                                <li><a href="vecera.html">Vecera</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 text-center footerr pet">
+                            <ul class="list-unstyled">
+                                <li><a href="galerija.html">Galerija slika</a></li>
+                                <li><a href="faq.html">FAQ pitanja</a></li>
+                                <li><a href="staranazastampu.html" >Strana za stampu</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 text-center pet">
+                            <ul class="list-unstyled">
+                                <li><a href="download.html">Download</a></li>
+                                <li><a href="mapa.html">Mapa sajta</a></li>
+                                <li><a href="kontakt.html">Kontakt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+           <hr class="hr">
+                &copy; 2024. Sva prava zadrazana, copyright zabranjen ili se vidimo na sudu.
+              
+            </footer>
+
+
+            <script src="./js/lightbox-plus-jquery.min.js"></script>
+            <script src="./js/lightbox.min.js"></script>
+
+</body>
+</html>
